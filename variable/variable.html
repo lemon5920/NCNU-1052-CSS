@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Variable</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root {
+            --text-color: #ff0000;
+        }
+
+        h3 {
+            --h3-color: #00f;
+        }
+
+        .text {
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+<header>CSS Demo</header>
+    <div class="container">
+        <nav id="nav"></nav>
+        <section>
+           <h1>Variable <a href="https://jsfiddle.net/lemon5920/13j1vow0/"><button>Try it yourself &raquo;</button></a></h1>
+           <p class="text">Text</p>
+           <h3>Header Three</h3>
+
+<xmp>/* CSS */
+<style>
+    :root {
+        --text-color: #ff0000;
+    }
+
+    .text {
+        color: var(--text-color);
+    }
+</style>
+
+<!-- HTML -->
+<p class="text">Text</p>
+</xmp>
+        </section>
+    </div>
+    <footer>@somebody</footer>
+    <script src="../nav.js"></script>
+</body>
+</html>

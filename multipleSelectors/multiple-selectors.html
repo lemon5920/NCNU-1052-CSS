@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple Selectors</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .cube {
+            border: 1px solid;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            float: left;
+            margin: 0px 5px;
+        }
+
+        .one>.two{
+            background-color: yellow;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>CSS Demo</header>
+    <div class="container">
+        <nav id="nav"></nav>
+        <section>
+            <div style="height: 100px;">
+                <h1>Multiple Selectors <a href="https://jsfiddle.net/lemon5920/t2uz2az3/"><button>Try it yourself &raquo;</button></a></h1>
+                
+                <div class="cube one">
+                    only one
+                </div>
+
+                <div class="cube two">
+                    only two
+                </div>
+
+                <div class="cube one two">
+                    both
+                </div>
+
+                <div class="cube one">
+                    <div class=" two">
+                        one 裡面 two
+                    </div>
+                </div>
+
+                <div class="cube two">
+                    <div class=" one">
+                        two 裡面 one
+                    </div>
+                </div>
+
+                <div class="cube one">
+                    <div class="three">
+                        <div class=" two">
+                            one -> three -> two
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>@somebody</footer>
+    <script src="../nav.js"></script>
+</body>
+</html>

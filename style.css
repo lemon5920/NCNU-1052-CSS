@@ -1,0 +1,66 @@
+:root {
+    --banner-bg-color: black;
+    --banner-color: white;
+}
+
+html, body {
+    margin: 0px;
+    /*height: 100%;*/
+}
+
+header {
+    background-color: var(--banner-bg-color);
+    color: var(--banner-color);
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    /*height: calc(100% - 80px);*/
+}
+
+nav {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid;
+}
+
+section {
+    flex: 2;
+    padding: 20px;
+    border-left: 1px solid;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+li {
+    line-height: 30px
+}
+
+xmp {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+footer {
+    background-color: var(--banner-bg-color);
+    color: var(--banner-color);
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
